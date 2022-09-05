@@ -1,3 +1,138 @@
-h1{
-    color:red
+*{
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+
+    direction: ltr;
+}
+
+.container{
+    width: 100%;
+    padding: 0 70px;
+}
+
+clearfix{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width:100%;
+    height: 83px;
+    background-color: #eee;
+    box-shadow: 2px 2px 3px #aaa;
+}
+
+.header_logo{
+    float: left;
+    padding: 5px;
+
+}
+
+.header_logo img{
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+.header_nav{
+    float: right;
+    margin: 25px;
+    font-style: italic;
+}
+
+.header_nav li{
+    display: inline-block;
+    padding: 11px 18px;
+    font-size: medium;
+}
+
+.header_nav li a:hover{
+    background-color: chartreuse;
+}
+
+.container1{
+    position: relative;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.text_block{
+    position: absolute;
+    background-color: white;
+    text-align:center;
+    bottom: 250px;
+    left: 20px;
+    border: 3px solid orangered;
+}
+
+.text_block p{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.btn{
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 14px 28px ;
+    cursor: pointer;
+}
+/* Blue */
+.Learn_More{
+    border-color: #2196F3;
+    color: dodgerblue;
+}
+
+.Learn_More:hover{
+    background-color: #2196F3;
+    color: white;
+}
+
+.page_intro{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 300px;
+    padding: 3px 0;
+}
+
+.container2 h1{
+    text-align: center;
+    padding: 8px;
+}
+
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.flex_container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_container2 div{
+    padding-block-end: 20px;
+}
+
+.flex_container3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.flex_container3 h3{
+     text-align: center;
+     color: crimson;
 }
