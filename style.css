@@ -13,7 +13,7 @@ body{
     padding: 0 70px;
 }
 
-clearfix{
+.clearfix{
     clear: both;
 }
 
@@ -23,9 +23,9 @@ a{
 
 .header{
     width:100%;
-    height: 83px;
+    height: 78px;
     background-color: #eee;
-    box-shadow: 2px 2px 3px #aaa;
+    box-shadow: 0 1px 1px #aaa;
 }
 
 .header_logo{
@@ -35,20 +35,29 @@ a{
 }
 
 .header_logo img{
+    display: flex;
+    flex-direction: row;
     width: auto;
     height: 70px;
     cursor: pointer;
 }
 
 .header_nav{
-    float: right;
-    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 76px;
+    margin: 10px;
     font-style: italic;
 }
 
 .header_nav li{
     display: inline-block;
-    padding: 11px 18px;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 8px 2px;
+    margin: 10px;
     font-size: medium;
 }
 
@@ -62,18 +71,24 @@ a{
     font-size: 15px;
 }
 
+.container1 img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .text_block{
     position: absolute;
     background-color: white;
     text-align:center;
     bottom: 250px;
     left: 20px;
-    border: 3px solid orangered;
+    border: 2px solid darkred;
 }
 
 .text_block p{
-    font-style: italic;
-    font-size: 20px;
+    font-family: Helvetica;
+    font-size: 14px;
 }
 
 .btn{
@@ -106,24 +121,38 @@ a{
 
 .container2 h1{
     text-align: center;
-    padding: 8px;
+    padding: auto;
 }
 
 .flex_container{
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px;
     cursor: pointer;
+}
+
+.flex_container img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .flex_container2{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .flex_container2 div{
-    padding-block-end: 20px;
+    padding-block-end: 3px;
+}
+
+.flex_container2 h3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 
 .flex_container3 img{
